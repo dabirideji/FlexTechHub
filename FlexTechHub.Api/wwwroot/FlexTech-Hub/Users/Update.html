@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update User</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Update User</h2>
+    <form id="updateUserForm">
+      <div class="mb-3">
+        <label for="role" class="form-label">Role</label>
+        <input type="text" class="form-control" id="role" required>
+      </div>
+      <div class="mb-3">
+        <label for="userFirstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="userFirstName" required>
+      </div>
+      <div class="mb-3">
+        <label for="userLastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="userLastName" required>
+      </div>
+      <div class="mb-3">
+        <label for="userEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="userEmail" required>
+      </div>
+      <div class="mb-3">
+        <label for="userPhoneNumber" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="userPhoneNumber" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Update User</button>
+    </form>
+  </div>
+
+  <script>
+    async function fetchUserDetails(id) {
+      const response = await fetch(`http://shouldelete-001-site1.etempurl.com/api/User/Get/${id}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const user = await response.json();
+      document.getElementById('role').value = user.role;
+      document.getElementById('userFirstName').value = user.userFirstName;
+      document.getElementById('userLastName').value = user.userLastName;
+      document.getElementById('userEmail').value = user.userEmail;
+      document.getElementById('userPhoneNumber').value = user.userPhoneNumber;
+    }
+
+    document.getElementById('updateUserForm').addEventListener('submit', async function(event) {
+      event.preventDefault();
+
+      const userId = new URLSearchParams(window.location.search).get('id');
+      const role = document.getElementById('role').value;
+      const userFirstName = document.getElementById('userFirstName').value;
+      const userLastName = document.getElementById('userLastName').value;
+      const userEmail = document.getElementById('userEmail').value;
+      const userPhoneNumber = document.getElementById('userPhoneNumber').value;
+
+      const response = await fetch(`http://shouldelete-001-site1.etempurl.com/api/User/Update/${userId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          role,
+          userFirstName,
+          userLastName,
+          userEmail,
+          userPhoneNumber
+        })
+      });
+
+      if (response.ok) {
+        alert('User updated successfully');
+        window.location.href = 'index.html'; 
+      } else {
+        alert('Failed to update user');
+      }
+    });
+
+    window.onload = function() {
+      const userId = new URLSearchParams(window.location.search).get('id');
+      fetchUserDetails(userId);
+    }
+  </script>
+</body>
+</html>
