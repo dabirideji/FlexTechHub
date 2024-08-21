@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTechHub : Payment Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .response {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e7f3fe;
+            border: 1px solid #b3e5fc;
+            display: none;
+        }
+    </style>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>FlexTechHub : FlexPay</h1>
+    
+    <!-- Data Bundle Form -->
+    <div class="form-group">
+        <label for="mobileNetwork">Mobile Network</label>
+        <select id="mobileNetwork">
+            <option value="01">MTN</option>
+            <option value="02">Glo</option>
+            <option value="03">Etisalat</option>
+            <option value="04">Airtel</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="dataPlan">Data Plan</label>
+        <select id="dataPlan">
+            <option value="1500.01">1.5GB - N585.00 (MTN)</option>
+            <option value="1000">1GB - N263.00 (MTN)</option>
+            <option value="2000">2GB - N526.00 (MTN)</option>
+            <option value="5000">5GB - N1,315.00 (MTN)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="dataMobileNumber">Recipient Mobile Number</label>
+        <input type="text" id="dataMobileNumber" placeholder="Enter mobile number">
+    </div>
+    <button id="buyDataButton">Buy Data Bundle</button>
+
+    <!-- Airtime Form -->
+    <div class="form-group">
+        <label for="airtimeNetwork">Mobile Network</label>
+        <select id="airtimeNetwork">
+            <option value="01">MTN</option>
+            <option value="02">Glo</option>
+            <option value="03">Etisalat</option>
+            <option value="04">Airtel</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="airtimeAmount">Airtime Amount</label>
+        <input type="number" id="airtimeAmount" placeholder="Enter amount in Naira">
+    </div>
+    <div class="form-group">
+        <label for="airtimeMobileNumber">Recipient Mobile Number</label>
+        <input type="text" id="airtimeMobileNumber" placeholder="Enter mobile number">
+    </div>
+    <button id="buyAirtimeButton">Buy Airtime</button>
+
+    <!-- Electricity Bill Payment Form -->
+    <div class="form-group">
+        <label for="electricityProvider">Electricity Provider</label>
+        <select id="electricityProvider">
+            <option value="PHCN">PHCN</option>
+            <!-- Add more providers as needed -->
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="electricityAmount">Amount</label>
+        <input type="number" id="electricityAmount" placeholder="Enter amount in Naira">
+    </div>
+    <div class="form-group">
+        <label for="electricityAccountNumber">Account Number</label>
+        <input type="text" id="electricityAccountNumber" placeholder="Enter account number">
+    </div>
+    <button id="payElectricityButton">Pay Electricity Bill</button>
+
+    <!-- Wallet Balance Section -->
+    <div class="form-group">
+        <button id="checkBalanceButton">Check Wallet Balance</button>
+    </div>
+    <div id="walletResponseContainer" class="response"></div>
+
+    <div id="responseContainer" class="response"></div>
+</div>
+
+<!-- <script>
+    const customerID = 'CK100954778';
+    const apiKey = '099P068THTRKJ56L9ZRYWS07L5MR9LPV226581Y2G1HCUS52NMI6216823DP3Z5B';
+    const callBackURL = 'http://localhost:5233/FlexTech-Hub/ApiSuccess.html'; // Replace with your actual callback URL
+
+    function handleResponse(data) {
+        const responseContainer = document.getElementById('responseContainer');
+        responseContainer.style.display = 'block';
+        if (data.status === 'ORDER_RECEIVED') {
+            responseContainer.innerHTML = `<p>Order received! Transaction ID: ${data.orderid}</p>`;
+        } else {
+            responseContainer.innerHTML = `<p>Order failed: ${data.status}</p>`;
+        }
+    }
+
+    function handleError(error) {
+        console.error('Error:', error);
+        const responseContainer = document.getElementById('responseContainer');
+        responseContainer.style.display = 'block';
+        responseContainer.innerHTML = `<p>An error occurred while processing the request. Please try again.</p>`;
+    }
+
+    document.getElementById('buyDataButton').addEventListener('click', function() {
+        const mobileNetwork = document.getElementById('mobileNetwork').value;
+        const dataPlan = document.getElementById('dataPlan').value;
+        const mobileNumber = document.getElementById('dataMobileNumber').value;
+
+        if (!mobileNumber) {
+            alert('Please enter the mobile number.');
+            return;
+        }
+
+        const apiURL = `https://www.nellobytesystems.com/APIBuy.asp?UserID=${customerID}&APIKey=${apiKey}&MobileNetwork=${mobileNetwork}&DataPlan=${dataPlan}&MobileNumber=${mobileNumber}&CallBackURL=${callBackURL}`;
+
+        fetch(apiURL, { method: 'GET' })
+            .then(response => response.json())
+            .then(handleResponse)
+            .catch(handleError);
+    });
+
+    document.getElementById('buyAirtimeButton').addEventListener('click', function() {
+        const airtimeNetwork = document.getElementById('airtimeNetwork').value;
+        const airtimeAmount = document.getElementById('airtimeAmount').value;
+        const airtimeMobileNumber = document.getElementById('airtimeMobileNumber').value;
+
+        if (!airtimeMobileNumber || !airtimeAmount) {
+            alert('Please enter all required details.');
+            return;
+        }
+
+        const apiURL = `https://www.nellobytesystems.com/APIBuyAirtime.asp?UserID=${customerID}&APIKey=${apiKey}&MobileNetwork=${airtimeNetwork}&Amount=${airtimeAmount}&MobileNumber=${airtimeMobileNumber}&CallBackURL=${callBackURL}`;
+
+        fetch(apiURL, { method: 'GET' })
+            .then(response => response.json())
+            .then(handleResponse)
+            .catch(handleError);
+    });
+
+    document.getElementById('payElectricityButton').addEventListener('click', function() {
+        const electricityProvider = document.getElementById('electricityProvider').value;
+        const electricityAmount = document.getElementById('electricityAmount').value;
+        const electricityAccountNumber = document.getElementById('electricityAccountNumber').value;
+
+        if (!electricityAccountNumber || !electricityAmount) {
+            alert('Please enter all required details.');
+            return;
+        }
+
+        const apiURL = `https://www.nellobytesystems.com/APIPayElectricity.asp?UserID=${customerID}&APIKey=${apiKey}&Provider=${electricityProvider}&Amount=${electricityAmount}&AccountNumber=${electricityAccountNumber}&CallBackURL=${callBackURL}`;
+
+        fetch(apiURL, { method: 'GET' })
+            .then(response => response.json())
+            .then(handleResponse)
+            .catch(handleError);
+    });
+
+    document.getElementById('checkBalanceButton').addEventListener('click', function() {
+        const apiURL = `https://www.nellobytesystems.com/APIWalletBalance.asp?UserID=${customerID}&APIKey=${apiKey}`;
+
+        fetch(apiURL, { method: 'GET' })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                const walletResponseContainer = document.getElementById('walletResponseContainer');
+                walletResponseContainer.style.display = 'block';
+                if (data.balance!=null || data.balance!=undefined) {
+                    walletResponseContainer.innerHTML = `<p>Your wallet balance is: N${data.balance}</p>`;
+                } else {
+                    walletResponseContainer.innerHTML = `<p>Failed to retrieve wallet balance: ${data.status}</p>`;
+                }
+            })
+            .catch(handleError);
+    });
+</script> -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js" integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    const customerID = 'CK100954778';
+    const apiKey = '099P068THTRKJ56L9ZRYWS07L5MR9LPV226581Y2G1HCUS52NMI6216823DP3Z5B';
+    const callBackURL = 'http://localhost:5233/FlexTech-Hub/ApiSuccess.html'; // Replace with your actual callback URL
+
+    function notify(type, text) {
+        new Noty({
+            type: type,
+            layout: 'topRight',
+            text: text,
+            timeout: 5000,
+            progressBar: true
+        }).show();
+    }
+
+    function handleResponse(data) {
+        if (data.status === 'ORDER_RECEIVED') {
+            notify('success', `Order received! Transaction ID: ${data.orderid}`);
+        } else {
+            notify('error', `Order failed: ${data.status}`);
+        }
+    }
+
+    function handleError(error) {
+        console.error('Error:', error);
+        notify('error', 'An error occurred while processing the request. Please try again.');
+    }
+
+    document.getElementById('buyDataButton').addEventListener('click', function() {
+        const mobileNetwork = document.getElementById('mobileNetwork').value;
+        const dataPlan = document.getElementById('dataPlan').value;
+        const mobileNumber = document.getElementById('dataMobileNumber').value;
+
+        if (!mobileNumber) {
+            notify('warning', 'Please enter the mobile number.');
+            return;
+        }
+
+        const apiURL = `https://www.nellobytesystems.com/APIBuy.asp?UserID=${customerID}&APIKey=${apiKey}&MobileNetwork=${mobileNetwork}&DataPlan=${dataPlan}&MobileNumber=${mobileNumber}&CallBackURL=${callBackURL}`;
+
+        fetch(apiURL, { method: 'GET' })
+            .then(response => response.json())
+            .then(handleResponse)
+            .catch(handleError);
+    });
+
+    document.getElementById('buyAirtimeButton').addEventListener('click', function() {
+        const airtimeNetwork = document.getElementById('airtimeNetwork').value;
+        const airtimeAmount = document.getElementById('airtimeAmount').value;
+        const airtimeMobileNumber = document.getElementById('airtimeMobileNumber').value;
+
+        if (!airtimeMobileNumber || !airtimeAmount) {
+            notify('warning', 'Please enter all required details.');
+            return;
+        }
+
+        const apiURL = `https://www.nellobytesystems.com/APIBuyAirtime.asp?UserID=${customerID}&APIKey=${apiKey}&MobileNetwork=${airtimeNetwork}&Amount=${airtimeAmount}&MobileNumber=${airtimeMobileNumber}&CallBackURL=${callBackURL}`;
+
+        fetch(apiURL, { method: 'GET' })
+            .then(response => response.json())
+            .then(handleResponse)
+            .catch(handleError);
+    });
+
+    document.getElementById('payElectricityButton').addEventListener('click', function() {
+        const electricityProvider = document.getElementById('electricityProvider').value;
+        const electricityAmount = document.getElementById('electricityAmount').value;
+        const electricityAccountNumber = document.getElementById('electricityAccountNumber').value;
+
+        if (!electricityAccountNumber || !electricityAmount) {
+            notify('warning', 'Please enter all required details.');
+            return;
+        }
+
+        const apiURL = `https://www.nellobytesystems.com/APIPayElectricity.asp?UserID=${customerID}&APIKey=${apiKey}&Provider=${electricityProvider}&Amount=${electricityAmount}&AccountNumber=${electricityAccountNumber}&CallBackURL=${callBackURL}`;
+
+        fetch(apiURL, { method: 'GET' })
+            .then(response => response.json())
+            .then(handleResponse)
+            .catch(handleError);
+    });
+
+    document.getElementById('checkBalanceButton').addEventListener('click', function() {
+        const apiURL = `https://www.nellobytesystems.com/APIWalletBalance.asp?UserID=${customerID}&APIKey=${apiKey}`;
+
+        fetch(apiURL, { method: 'GET' })
+            .then(response => response.json())
+            .then(data => {
+                if (data.balance != null || data.balance != undefined) {
+                    notify('success', `Your wallet balance is: N${data.balance}`);
+                } else {
+                    notify('error', `Failed to retrieve wallet balance: ${data.status}`);
+                }
+            })
+            .catch(handleError);
+    });
+</script>
+
+</body>
+</html>

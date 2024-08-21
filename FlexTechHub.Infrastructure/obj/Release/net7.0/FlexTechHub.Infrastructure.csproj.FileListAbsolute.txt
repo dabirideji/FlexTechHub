@@ -17,3 +17,4 @@ C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Infrastructure\obj\Release\net7.0\r
 C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Infrastructure\obj\Release\net7.0\FlexTechHub.Infrastructure.pdb
 C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Infrastructure\obj\Release\net7.0\FlexTechHub.Infrastructure.genruntimeconfig.cache
 C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Infrastructure\obj\Release\net7.0\ref\FlexTechHub.Infrastructure.dll
+C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Infrastructure\obj\Release\net7.0\FlexTechHub.Infrastructure.sourcelink.json

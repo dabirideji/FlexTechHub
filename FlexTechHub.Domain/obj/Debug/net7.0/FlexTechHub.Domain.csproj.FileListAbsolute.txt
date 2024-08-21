@@ -27,3 +27,4 @@ C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Domain\obj\Debug\net7.0\
 C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Domain\obj\Debug\net7.0\FlexTechHub.Domain.pdb
 C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Domain\obj\Debug\net7.0\FlexTechHub.Domain.genruntimeconfig.cache
 C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Domain\obj\Debug\net7.0\ref\FlexTechHub.Domain.dll
+C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Domain\obj\Debug\net7.0\FlexTechHub.Domain.sourcelink.json

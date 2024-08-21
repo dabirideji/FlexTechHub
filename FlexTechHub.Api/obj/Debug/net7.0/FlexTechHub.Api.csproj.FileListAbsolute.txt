@@ -225,3 +225,4 @@ C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Api\obj\Debug\net7.0\ref
 C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Api\obj\Debug\net7.0\FlexTechHub.Api.pdb
 C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Api\obj\Debug\net7.0\FlexTechHub.Api.genruntimeconfig.cache
 C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Api\obj\Debug\net7.0\ref\FlexTechHub.Api.dll
+C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Api\obj\Debug\net7.0\FlexTechHub.Api.sourcelink.json

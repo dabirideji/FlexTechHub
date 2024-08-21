@@ -33,3 +33,4 @@ C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Application\obj\Debug\ne
 C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Application\obj\Debug\net7.0\FlexTechHub.Application.pdb
 C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Application\obj\Debug\net7.0\FlexTechHub.Application.genruntimeconfig.cache
 C:\Users\HP\Desktop\Flextechhub\FlexTechHub\FlexTechHub.Application\obj\Debug\net7.0\ref\FlexTechHub.Application.dll
+C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Application\obj\Debug\net7.0\FlexTechHub.Application.sourcelink.json

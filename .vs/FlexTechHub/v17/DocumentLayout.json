@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{25CA9F48-092D-4A98-94F6-A8A04D2E852B}|FlexTechHub.Api\\FlexTechHub.Api.csproj|c:\\xampp\\htdocs\\work\\flextechhub\\flextechhub.api\\wwwroot\\flextech-hub\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25CA9F48-092D-4A98-94F6-A8A04D2E852B}|FlexTechHub.Api\\FlexTechHub.Api.csproj|solutionrelative:flextechhub.api\\wwwroot\\flextech-hub\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{25CA9F48-092D-4A98-94F6-A8A04D2E852B}|FlexTechHub.Api\\FlexTechHub.Api.csproj|c:\\xampp\\htdocs\\work\\flextechhub\\flextechhub.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25CA9F48-092D-4A98-94F6-A8A04D2E852B}|FlexTechHub.Api\\FlexTechHub.Api.csproj|solutionrelative:flextechhub.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,19 +27,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\Program.cs",
-              "RelativeDocumentMoniker": "FlexTechHub.Api\\Program.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\Program.cs",
-              "RelativeToolTip": "FlexTechHub.Api\\Program.cs",
-              "ViewState": "AQIAAAYBAAAAAAAAAAAswB8BAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T22:29:24.691Z",
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\index.html",
+              "RelativeDocumentMoniker": "FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\index.html",
+              "ToolTip": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\index.html",
+              "RelativeToolTip": "FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-19T07:20:50.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\Program.cs",
+              "RelativeDocumentMoniker": "FlexTechHub.Api\\Program.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\Program.cs",
+              "RelativeToolTip": "FlexTechHub.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T22:29:24.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\appsettings.json",
               "RelativeDocumentMoniker": "FlexTechHub.Api\\appsettings.json",

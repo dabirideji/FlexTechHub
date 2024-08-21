@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlexTechHub.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cb96763bffdfbbe0923c0ecaaa2a631dc45328a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aeaa70f81a5a2016aab6dc6ace859c949a394982")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlexTechHub.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlexTechHub.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,3 +12,4 @@ C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Domain\obj\Release\net7.0\refint\Fl
 C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Domain\obj\Release\net7.0\FlexTechHub.Domain.pdb
 C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Domain\obj\Release\net7.0\FlexTechHub.Domain.genruntimeconfig.cache
 C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Domain\obj\Release\net7.0\ref\FlexTechHub.Domain.dll
+C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Domain\obj\Release\net7.0\FlexTechHub.Domain.sourcelink.json
