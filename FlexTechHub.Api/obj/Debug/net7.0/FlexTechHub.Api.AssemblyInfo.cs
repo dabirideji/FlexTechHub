@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlexTechHub.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61315cc7af870c22b74a3ea05f21882585cc88d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlexTechHub.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlexTechHub.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

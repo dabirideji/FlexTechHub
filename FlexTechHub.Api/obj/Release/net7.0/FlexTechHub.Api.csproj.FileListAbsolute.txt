@@ -110,3 +110,5 @@ C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Api\obj\Release\net7.0\refint\FlexT
 C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Api\obj\Release\net7.0\FlexTechHub.Api.pdb
 C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Api\obj\Release\net7.0\FlexTechHub.Api.genruntimeconfig.cache
 C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Api\obj\Release\net7.0\ref\FlexTechHub.Api.dll
+C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Api\bin\Release\net7.0\FlexTechHub.Api.staticwebassets.runtime.json
+C:\xampp\htdocs\WORK\FlexTechHub\FlexTechHub.Api\obj\Release\net7.0\FlexTechHub.Api.sourcelink.json

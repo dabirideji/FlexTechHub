@@ -1,12 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\FlexTech-Hub\\LICENSE.txt"
-    },
-    {
-      "Id": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\READ-ME.txt",
-      "PackagePath": "staticwebassets\\FlexTech-Hub\\READ-ME.txt"
+      "Id": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\API.html",
+      "PackagePath": "staticwebassets\\FlexTech-Hub\\API.html"
     },
     {
       "Id": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\Users\\Createuser.html",
@@ -381,10 +377,6 @@
       "PackagePath": "staticwebassets\\FlexTech-Hub\\mail\\jqBootstrapValidation.min.js"
     },
     {
-      "Id": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\online-courses-html-template.jpg",
-      "PackagePath": "staticwebassets\\FlexTech-Hub\\online-courses-html-template.jpg"
-    },
-    {
       "Id": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\scss\\bootstrap\\scss\\_alert.scss",
       "PackagePath": "staticwebassets\\FlexTech-Hub\\scss\\bootstrap\\scss\\_alert.scss"
     },
@@ -755,10 +747,6 @@
     {
       "Id": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\FlexTech-Hub\\teacher.html",
       "PackagePath": "staticwebassets\\FlexTech-Hub\\teacher.html"
-    },
-    {
-      "Id": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Api\\wwwroot\\dej.html",
-      "PackagePath": "staticwebassets\\dej.html"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FlexTechHub.Api.Microsoft.AspNetCore.StaticWebAssets.props",

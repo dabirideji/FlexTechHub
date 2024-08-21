@@ -3498,11 +3498,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Domain\\FlexTechHub.Domain.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Domain\\FlexTechHub.Domain.csproj",
       "projectName": "FlexTechHub.Domain",
-      "projectPath": "c:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Domain\\FlexTechHub.Domain.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Domain\\FlexTechHub.Domain.csproj",
       "packagesPath": "C:\\Users\\DABIRI\\.nuget\\packages\\",
-      "outputPath": "c:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Domain\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\WORK\\FlexTechHub\\FlexTechHub.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",
