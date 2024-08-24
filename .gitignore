@@ -1,0 +1,74 @@
+# Build Folders / Outputs
+bin/
+obj/
+out/
+build/
+
+# User-specific Files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated Files
+*.log
+*.tlog
+*.vscode
+*.sln.ide
+*.csproj.user
+*.ds_store
+.vscode/
+.vs/
+.vscode/*
+
+# Other IDE Specific Files
+.idea/
+.vscode/
+*.code-workspace
+
+# NuGet Packages
+*.nupkg
+packages/
+*.snupkg
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Rider
+.idea/
+*.sln.iml
+
+# Resharper
+_ReSharper.Caches/
+
+# NUnit
+TestResult.xml
+*.nunit.xml
+*.trx
+
+# Azure DevOps
+.env
+.env.*
+
+# Configuration files
+appsettings*.json
+
+# SQL Server generated files
+*.mdf
+*.ldf
+
+# Visual Studio Code Snippets
+*.code-snippets
+
+# DotNet specific files
+**/project.lock.json
+**/project.fragment.lock.json
+artifacts/
+*.psess
+
+# Ignore IDE configs
+.vscode/
+.vs/
+.idea/
