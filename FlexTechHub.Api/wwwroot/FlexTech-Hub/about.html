@@ -65,18 +65,22 @@
 </div>
 <!-- Topbar End -->
 
+
     <!-- Navbar Start -->
     <div class="container-fluid">
         <div class="row border-top px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
-                <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none" data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px;">
+                <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none"
+                    data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px;">
                     <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Subjects</h5>
                     <i class="fa fa-angle-down text-primary"></i>
                 </a>
-                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light"
+                    id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
                     <div class="navbar-nav w-100">
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-toggle="dropdown">Web Design <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <a href="#" class="nav-link" data-toggle="dropdown">Web Design <i
+                                    class="fa fa-angle-down float-right mt-1"></i></a>
                             <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
                                 <a href="" class="dropdown-item">HTML</a>
                                 <a href="" class="dropdown-item">CSS</a>
@@ -104,11 +108,11 @@
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="course.html" class="nav-item nav-link">Courses</a>
                             <a href="teacher.html" class="nav-item nav-link">Teachers</a>
-                           
+
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                             <a href="./API.html" class="nav-item nav-link">FlexRecharge</a>
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="https://paystack.com/pay/6b-woijh2b">Join Now</a>
+                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="#sign-up-form">Join Now</a>
                     </div>
                 </nav>
             </div>
@@ -153,8 +157,8 @@
 <!-- About End -->
 
 
-<!-- Registration Start -->
-<div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+   <!-- Registration Start -->
+   <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
     <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-lg-7 mb-5 mb-lg-0">
@@ -162,41 +166,46 @@
                     <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Courses?</h5>
                     <h1 class="text-white">Get 30% Off as a New Student</h1>
                 </div>
-                <p class="text-white">Unlock a world of knowledge with our exclusive offer. Dive into courses that enhance your skills and advance your career. Our courses are designed to provide practical knowledge and real-world skills.</p>
+                <p class="text-white">Unlock a world of knowledge with our exclusive offer. Dive into courses that
+                    enhance your skills and advance your career. Our courses are designed to provide practical
+                    knowledge and real-world skills.</p>
                 <ul class="list-inline text-white m-0">
-                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Comprehensive curriculum tailored to industry needs</li>
-                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Experienced instructors with real-world expertise</li>
-                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Flexible learning to fit your schedule</li>
+                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Comprehensive curriculum tailored
+                        to industry needs</li>
+                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Experienced instructors with
+                        real-world expertise</li>
+                    <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Flexible learning to fit your
+                        schedule</li>
                 </ul>
             </div>
             <div class="col-lg-5">
-                <div class="card border-0">
+                <div id="sign-up-form" class="card border-0">
                     <div class="card-header bg-light text-center p-4">
                         <h1 class="m-0">Sign Up Now</h1>
                     </div>
                     <div class="card-body rounded-bottom bg-primary p-5">
-                        <form>
+                        <form id="signupForm">
                             <div class="form-group">
-                                <input type="text" class="form-control border-0 p-4" placeholder="Your name" required="required" />
+                                <input type="text" id="name" class="form-control border-0 p-4"
+                                    placeholder="Your name" required="required" />
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control border-0 p-4" placeholder="Your email" required="required" />
+                                <input type="email" id="email" class="form-control border-0 p-4"
+                                    placeholder="Your email" required="required" />
                             </div>
                             <div class="form-group">
-                                <select class="custom-select border-0 px-4" style="height: 47px;">
-                                    <option selected>Select a course</option>
-                                    <option value="1">Web Design</option>
-                                    <option value="2">Backend Development</option>
-                                    <option value="3">React</option>
-                                    <option value="4">Laravel</option>
-                                    <option value="5">Database Management</option>
+                                <select id="course" class="custom-select border-0 px-4" style="height: 47px;">
+                                    <option value="" disabled selected>Select a course</option>
+                                    <option value="1" data-price="9000">Web Design</option>
+                                    <option value="2" data-price="12000">Backend Development</option>
+                                    <option value="3" data-price="7000">React</option>
+                                    <option value="4" data-price="10000">Laravel</option>
+                                    <option value="5" data-price="8000">Database Management</option>
                                 </select>
                             </div>
                             <div>
-                                <a href="https://paystack.com/pay/6b-woijh2b">
-                                    
-                                    <p   class="btn btn-dark btn-block border-0 py-3" type="submit">Sign Up Now</p>
-                                </a>
+                                <button type="submit" class="btn btn-dark btn-block border-0 py-3">Sign Up
+                                    Now</button>
                             </div>
                         </form>
                     </div>
@@ -333,6 +342,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="./PaymentGatewayModule/paymentGatewayHelperModule.js"></script>
+
 </body>
 
 </html>
