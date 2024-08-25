@@ -1,3 +1,5 @@
+using InventoryManagement.Application.Services.PaymentGateway;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,7 +14,10 @@ builder.Services.AddDbContext<InventoryManagementDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ONLINE"),
         b => b.MigrationsAssembly("FlexTechHub.Api")));
 
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<PaymentService>();
 // Register Unit of Work and other services
+
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ITeacherCourseService, TeacherCourseService>();
