@@ -1,0 +1,204 @@
+[
+    {
+        "title": "AWS Complete Bootcamp Course",
+        "duration": "4 months",
+        "students": 25,
+        "rating": 4.5,
+        "price": "₦9,000",
+        "coverImage": "https://th.bing.com/th/id/OIG3.EFslLvYAflN7ahtTgjsO?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=zA8guDqfv40&list=WL&index=5"
+        ]
+    },
+    {
+        "title": "CompTIA IT Fundamentals",
+        "duration": "01h 30m",
+        "students": 25,
+        "rating": 4.5,
+        "price": "₦7,000",
+        "coverImage": "https://th.bing.com/th/id/OIG2.4DiStEYeUzGSdsLFPxDt?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=WWbP246ZWck&list=WL&index=6"
+        ]
+    },
+    {
+        "title": "How to start Day Trading from ZERO",
+        "duration": "2 months",
+        "students": 25,
+        "rating": 4.0,
+        "price": "₦10,000",
+        "coverImage": "https://th.bing.com/th/id/OIG1.O6IftmlQs1CJJzFPmWvx?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=UvXnnFPB1TY&list=WL&index=11"
+        ]
+    },
+    {
+        "title": "Power BI Full Course for Beginners",
+        "duration": "3 months",
+        "students": 25,
+        "rating": 4.8,
+        "price": "₦15,000",
+        "coverImage": "https://th.bing.com/th/id/OIG2.cwqpGezDlijQbhxcBlS4?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=31ORJa4WO9s&list=WL&index=21"
+        ]
+    },
+    {
+        "title": "Python Full Course for Beginners",
+        "duration": "6 months",
+        "students": 25,
+        "rating": 4.7,
+        "price": "₦12,000",
+        "coverImage": "https://th.bing.com/th/id/OIG2.XaNN63Lr2b5k30zZbtr9?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=H2EJuAcrZYU&list=WL&index=162"
+        ]
+    },
+    {
+        "title": "Cybersecurity for Beginners",
+        "duration": "5 months",
+        "students": 25,
+        "rating": 4.6,
+        "price": "₦14,000",
+        "coverImage": "https://th.bing.com/th/id/OIG1.8_fnSTgVA8vOnhVmhPUq?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=s19BxFpoSd0&list=WL&index=177",
+            "https://www.youtube.com/watch?v=6KZyR1xJvY0&list=WL&index=386&t=18s"
+        ]
+    },
+    {
+        "title": "DevOps Engineering Course for Beginners",
+        "duration": "4 months",
+        "students": 25,
+        "rating": 4.4,
+        "price": "₦11,000",
+        "coverImage": "https://th.bing.com/th/id/OIG1.01lAVerl.OZs9fbB1PdN?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=j5Zsa_eOXeY&list=WL&index=270"
+        ]
+    },
+    {
+        "title": "IBM IT Support Course",
+        "duration": "3 months",
+        "students": 25,
+        "rating": 4.3,
+        "price": "₦8,000",
+        "coverImage": "https://th.bing.com/th/id/OIG1.PjvmynR_NuFyIk4l2Rx1?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=BNbPsiCGQzw&list=WL&index=289"
+        ]
+    },
+    {
+        "title": "Project Management Course (PMP)",
+        "duration": "6 months",
+        "students": 25,
+        "rating": 4.7,
+        "price": "₦13,000",
+        "coverImage": "https://th.bing.com/th/id/OIG3.F2c3pjNYcDG0cPwgPnLL?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=JP-bUTR315M&list=WL&index=300",
+            "https://www.youtube.com/watch?v=JQj6AOpbi9g&list=WL&index=330"
+        ]
+    },
+    {
+        "title": "Business Analysis Course",
+        "duration": "5 months",
+        "students": 25,
+        "rating": 4.6,
+        "price": "₦10,000",
+        "coverImage": "https://th.bing.com/th/id/OIG3.ZJ4wDFVoondCFsWqj__s?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=OnwhPsfbMmU&list=WL&index=405&t=18s",
+            "https://www.youtube.com/watch?v=fTq464WHmps&list=WL&index=316",
+            "https://www.youtube.com/watch?v=odSlmIfNswQ"
+        ]
+    },
+    {
+        "title": "Microsoft Power Platform Fundamentals",
+        "duration": "3 months",
+        "students": 25,
+        "rating": 4.5,
+        "price": "₦9,000",
+        "coverImage": "https://th.bing.com/th/id/OIG2.8ft3_AtQA.dZa6YyggTf?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=ZTPcRWK0ytE&list=WL&index=332&t=311s"
+        ]
+    },
+    {
+        "title": "Database Engineering Complete Course",
+        "duration": "6 months",
+        "students": 25,
+        "rating": 4.8,
+        "price": "₦15,000",
+        "coverImage": "https://th.bing.com/th/id/OIG1._aF7ozcC8CkRjvkPEiwY?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=iwRneX7GIGI&list=WL&index=369"
+        ]
+    },
+    {
+        "title": "SQL Course for Beginners",
+        "duration": "3 months",
+        "students": 25,
+        "rating": 4.4,
+        "price": "₦8,000",
+        "coverImage": "https://th.bing.com/th/id/OIG1...2JODnViTl2v1dcyN.A?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=HXV3zeQKqGY&list=WL&index=375&t=33s"
+        ]
+    },
+    {
+        "title": "Agile Methodology Tutorial for Beginners",
+        "duration": "2 months",
+        "students": 25,
+        "rating": 4.3,
+        "price": "₦7,000",
+        "coverImage": "https://th.bing.com/th/id/OIG4.w.bW5uUff6VJHaYJ6lU5?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=_-00CNH3q2U"
+        ]
+    },
+    {
+        "title": "How to Make TikTok Videos for Beginners",
+        "duration": "1 month",
+        "students": 25,
+        "rating": 4.6,
+        "price": "₦6,000",
+        "coverImage": "https://th.bing.com/th/id/OIG4.GK9lcOxCfx0It09MiTZd?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=FFL-mgdyOg8&list=WL&index=3&t=7s"
+        ]
+    },
+    {
+        "title": "How to Make YouTube Videos for Beginners",
+        "duration": "2 months",
+        "students": 25,
+        "rating": 4.7,
+        "price": "₦7,500",
+        "coverImage": "https://th.bing.com/th/id/OIG4.Eht0R0__PP03e2DR_0zW?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=ofHZL9uXT1w&list=WL&index=4&t=132s"
+        ]
+    },
+    {
+        "title": "C# .NET  for Beginners",
+        "duration": "4 months",
+        "students": 85,
+        "rating": 4.7,
+        "price": "₦7,500",
+        "coverImage": "https://th.bing.com/th/id/OIG2.M2lCYSWIYqqalqGV3.RT?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=ofHZL9uXT1w&list=WL&index=4&t=132s"
+        ]
+    },
+    {
+        "title": "BlockChain Course",
+        "duration": "4 months",
+        "students": 85,
+        "rating": 4.7,
+        "price": "₦7,500",
+        "coverImage": "https://th.bing.com/th/id/OIG3.KrmoDhhgL_F7sd.A2ok9?w=270&h=270&c=6&r=0&o=5&pid=ImgGn",
+        "links": [
+            "https://www.youtube.com/watch?v=ofHZL9uXT1w&list=WL&index=4&t=132s"
+        ]
+    }
+]
